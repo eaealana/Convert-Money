@@ -5,20 +5,20 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    background: linear-gradient(90deg, #40047c 0%, #07f29c 100%);
 }
 
 main {
     margin: 0.9rem auto 0 auto;
-    background-color: rgb(248, 207, 241);
-    box-shadow: 0 0 2rem #888888;
+    background-color: #fae4fa;
+    box-shadow: 0 0 2rem #e2dfdf;
     width: 22rem;
     height: 38rem;
     text-align: center;
 }
 
 header {
-    background: rgb(116, 43, 155);
+    background: #40047c;
     height: 2rem;
     margin-bottom: 1rem;
 }
@@ -27,18 +27,6 @@ header h1 {
     font: 500 1.2rem 'Poppins', sans-serif;
     letter-spacing: 1px;
     color: #fff;
-}
-
-label select,
-label input,
-button {
-    display: flex;
-    flex-direction: column;
-    margin: 0.4rem auto;
-    width: 18rem;
-    padding: 0.4rem;
-    border: none;
-    outline: none;
 }
 
 label p {
@@ -52,37 +40,59 @@ select {
     letter-spacing: 2px;
 }
 
-.btn {
+select,
+input,
+button {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem auto;
+    width: 18rem;
+    padding: 0.4rem;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#btn {
     align-items: center;
-    background-color: rgb(116, 43, 155);
+    background-color: #40047c;
     color: #fff;
     cursor: pointer;
     font: 500 1rem 'Poppins', sans-serif;
     letter-spacing: 2px;
-    border-radius: 15px;
+    border-radius: 1.1rem;
     margin: 1rem auto;
-    transition: background 0.7s;
+    transition: all 0.2s;
 }
 
-.btn:hover {
-    background-color: #a753d4;
+#btn:hover {
+    opacity: 0.9;
 }
 
-.convert {
-    border: 2px solid #742b9b;
-    width: 18rem;
+#btn:active {
+    opacity: 0.5;
+}
+
+section {
+    border: 2px solid #40047c;
+    width: 20rem;
     margin: 0.2rem auto;
     padding: 0.5rem 0;
 }
 
-.convert div legend {
+section div legend {
     font: 500 0.8rem 'Poppins', sans-serif;
     letter-spacing: 1px;
 }
 
-.convert div p {
+section div p {
     font: 700 1rem 'Poppins', sans-serif;
-    color: rgb(60, 16, 83);
+    color: #40047c;
 
 }
 
